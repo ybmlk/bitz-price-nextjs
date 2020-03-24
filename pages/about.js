@@ -3,8 +3,8 @@ const About = () => {
   return (
     <Layout>
       <div>
-        <h1>About Bitz Price</h1>
-        <p>Application to view Bitcoin prices</p>
+        <h1 className='text-center'>About Bitz Price</h1>
+        <p className='text-center'>Application to view Bitcoin prices</p>
       </div>
     </Layout>
   );

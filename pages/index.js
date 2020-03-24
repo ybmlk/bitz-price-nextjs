@@ -1,4 +1,5 @@
 import Layout from '../components/Layout';
+import Prices from '../components/Prices';
 import { useEffect, useState } from 'react';
 // You can use any data fetching library
 import fetch from 'node-fetch';
@@ -18,18 +19,8 @@ const Index = ({ data }) => {
   return (
     <Layout>
       <div>
-        <h1>Welcome to Bitz Price</h1>
-        <div>
-          {currency.map(curr => {
-            return (
-              <div key={curr.code}>
-                <p>{curr.code}</p>
-                <p>{curr.rate}</p>
-                <p>{curr.description}</p>
-              </div>
-            );
-          })}
-        </div>
+        <h1 className='text-center'>Welcome to Bitz Price</h1>
+        <Prices currency={currency} />
       </div>
     </Layout>
   );
